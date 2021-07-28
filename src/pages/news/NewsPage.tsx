@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { NewsItem } from '../../shared/components/news-item/NewsItem';
 import { PageWrapper } from '../../shared/components/StyledComponents';
 import { fetchNews, selectNews } from '../../store/slices/news.slice';
-import { useAppDispatch, useAppSelector } from '../../utils/functions';
+import { useAppDispatch, useAppSelector } from '../../utils/custom-hooks';
 
 export const NewsPage = () => {
   const news = useAppSelector(selectNews);
