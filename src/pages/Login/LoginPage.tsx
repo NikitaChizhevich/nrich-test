@@ -1,7 +1,7 @@
 import React from 'react';
 import { Redirect } from 'react-router-dom';
 import { PageWrapper } from '../../shared/components/StyledComponents';
-import { SignInForm } from '../../shared/components/signin-form/SigInForm';
+import { SignInForm } from '../../shared/components/SigInForm/SigInForm';
 import { getAuthData } from '../../utils/functions';
 import { LoginFormContainer } from './styles';
 

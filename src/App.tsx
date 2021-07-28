@@ -3,11 +3,11 @@ import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
-import { LoginPage } from './pages/login/LoginPage';
-import { Header } from './shared/components/header/Header';
-import { MainPage } from './pages/main/MainPage';
-import { ProfilePage } from './pages/profile/ProfilePage';
-import { NewsPage } from './pages/news/NewsPage';
+import { LoginPage } from './pages/Login/LoginPage';
+import { Header } from './shared/components/Header/Header';
+import { MainPage } from './pages/Main/MainPage';
+import { ProfilePage } from './pages/Profile/ProfilePage';
+import { NewsPage } from './pages/News/NewsPage';
 
 function App() {
   return (
