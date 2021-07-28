@@ -1,5 +1,7 @@
 import { useLayoutEffect } from "react";
+import { TypedUseSelectorHook, useDispatch, useSelector } from "react-redux";
 import { useHistory } from "react-router";
+import { AppDispatch, RootState } from "../App.store";
 
 export const deleteAuthData = () => {
   localStorage.removeItem('authData')
@@ -36,3 +38,7 @@ export function useGuard() {
     }
   })
 };
+
+// Use throughout your app instead of plain `useDispatch` and `useSelector`
+export const useAppDispatch = () => useDispatch<AppDispatch>();
+export const useAppSelector: TypedUseSelectorHook<RootState> = useSelector;

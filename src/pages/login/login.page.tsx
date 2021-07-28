@@ -7,7 +7,6 @@ import { LoginFormContainer } from './styles';
 
 export const LoginPage = () => {
   const authData = getAuthData();
-  console.log('auth data');
   if(authData.isAuth) {
     return (<Redirect to="/"/>);
   }

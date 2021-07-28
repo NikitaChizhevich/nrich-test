@@ -1,15 +1,8 @@
 import React, { FC } from 'react';
+import { INewsItem } from '../../interfaces/news-item';
 import { NewsItemContainer, NewsItemInfo, NewsItemTags, NewsItemTitle } from './styles';
 
-interface NewsItemProps {
-  title: string;
-  author: string;
-  date: string;
-  tags: string[];
-  text: string;
-}
-
-export const NewsItem: FC<NewsItemProps> = ({ author, title, date, tags, text }) => {
+export const NewsItem: FC<INewsItem> = ({ author, title, date, tags, text }) => {
   return (
     <NewsItemContainer>
       <NewsItemInfo>
