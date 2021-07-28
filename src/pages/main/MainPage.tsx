@@ -1,5 +1,5 @@
 import React from 'react';
-import { PageWrapper } from '../../shared/components/styled-components';
+import { PageWrapper } from '../../shared/components/StyledComponents';
 import Logo from '../../logo.svg';
 
 export const MainPage = () => {

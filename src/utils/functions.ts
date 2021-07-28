@@ -1,7 +1,7 @@
 import { useLayoutEffect } from "react";
 import { TypedUseSelectorHook, useDispatch, useSelector } from "react-redux";
 import { useHistory } from "react-router";
-import { AppDispatch, RootState } from "../App.store";
+import { AppDispatch, RootState } from "../store/App.store";
 
 export const deleteAuthData = () => {
   localStorage.removeItem('authData')

@@ -1,6 +1,6 @@
 import React from 'react';
-import { PageWrapper } from '../../shared/components/styled-components';
-import { ProfileAvatar } from '../../shared/components/profile-avatar/Profile-avatar';
+import { PageWrapper } from '../../shared/components/StyledComponents';
+import { ProfileAvatar } from '../../shared/components/profile-avatar/ProfileAvatar';
 import { useGuard } from '../../utils/functions';
 
 export const ProfilePage = () => {

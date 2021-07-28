@@ -1,6 +1,6 @@
 import React from 'react';
 import { Navbar, Container, Nav } from 'react-bootstrap';
-import { PageLink } from '../styled-components';
+import { PageLink } from '../StyledComponents';
 import { deleteAuthData } from '../../../utils/functions';
 import Logo from '../../../logo.svg';
 

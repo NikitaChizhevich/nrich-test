@@ -1,4 +1,4 @@
-import React, { ChangeEvent, useState } from 'react';
+import React, { ChangeEvent, FormEventHandler, useState } from 'react';
 import { Form, Button } from 'react-bootstrap';
 import { useHistory } from 'react-router-dom';
 import { setAuthData } from '../../../utils/functions';
@@ -15,17 +15,18 @@ export const SignInForm = () => {
     setFormData({ ...formData, password: e.target.value });
   }
 
-  const saveUserData = () => {
+  const handleSubmit: FormEventHandler<HTMLFormElement> = (event) => {
     if(formData.userName === 'Test' && formData.password === '123456789') {
       setAuthData(formData);
       history.replace('/profile');
     } else {
       setInvalid(true);
     }
-  }
+  };
+
   return (
     <SigInFromWrapper>
-      <Form>
+      <Form onSubmit={handleSubmit}>
         <Form.Group className="mb-3">
           <Form.Label>User Name</Form.Label>
           <Form.Control type="text" placeholder="Enter User Name" value={formData.userName} onChange={setUserName} isInvalid={invalid} />
@@ -38,7 +39,7 @@ export const SignInForm = () => {
           User name or password entered incorrectly.
           </Form.Control.Feedback>
         </Form.Group>
-        <Button variant="primary" disabled={!formData.userName || !formData.password} onClick={saveUserData}>
+        <Button type="submit" variant="primary" disabled={!formData.userName || !formData.password}>
           Signin
         </Button>
       </Form>

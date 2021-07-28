@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from 'axios';
 import { RootState } from "../App.store";
-import { INewsItem } from "../shared/interfaces/news-item";
+import { INewsItem } from "../../shared/interfaces/news-item";
 
 
 interface NewsState {
